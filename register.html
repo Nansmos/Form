@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="Photo/Game_bar.png">
+</head>
+
+<body>
+    <section class="form" id="fomr">
+        <div class="header">
+            <form action="#">
+                <h1>Register</h1>
+                <div class="input_box">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input_box">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input_box">
+                    <input type="password" placeholder="Password" required id="password">
+                </div>
+                <div id="toggle" onclick="showPass()"></div>
+                <!-- <div class="remmember_forget">
+                    <input type="checkbox">
+                    <label>Remember Me</label>
+                    <a href="">Forgot Password</a>
+                </div> -->
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="show_pass1.js"></script>
+
+</html>

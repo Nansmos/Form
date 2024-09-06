@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-weight: 600;
+    font: bold;
+    background: url(Photo/bg.gif)no-repeat;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+
+}
+nav .header1 h2{
+    color: red;
+    font-weight: 400;
+    font-size: 3rem;
+    background: linear-gradient(to left,red,blue,rgb(243, 207, 47),rgb(35, 247, 39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+}
+.nav-bar .all{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    /* background-color: rgb(45, 45, 45); */
+    align-items: center;
+    /* box-shadow: 0 0 30px gray; */
+}
+nav a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    position: relative;
+    color: white;
+    letter-spacing: 3px;
+}
+nav a:hover1{
+    background: linear-gradient(to left, #00FF00 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right,red,yellow,orange,rgb(75, 230, 75));
+    border-radius: 10px;
+    transition: 0.4s;
+}
+nav a:hover1::before{
+    width: 102%;
+}
+
+.header{
+    padding:30px 50px;
+    /* background-color: red; */
+    width: 420px;
+    height: 350px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px gray;
+}
+.header h1{
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.header .input_box{
+    margin: 10px 10px;
+}
+.header .input_box input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+.input_box input::placeholder{
+    color: rgb(0, 0, 0);
+}
+.remmember_forget {
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.remmember_forget a{
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+.remmember_forget input{
+    margin-left: 13px;
+}
+.remmember_forget a:hover{
+    transition: 0.4s ease;
+    text-decoration: underline;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    border: none;
+
+}
+.header button{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    height: 45px;
+    outline: none;
+    border: 1px solid gray;
+    box-shadow: 0 0 10px rgb(151, 151, 151);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    letter-spacing: 2px;
+}
+.header button:hover{
+    color: #ddff00;
+    cursor: pointer;
+}
+.header .create-acc{
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+.create-acc a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.create-acc a:hover{
+    text-decoration: underline;
+}
+#toggle{
+    position: absolute;
+    top: 39.8%;
+    right: 70px;
+    font-size: 10px;
+    background: url(Photo/view.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#toggle.hide{
+    background: url(Photo/hide.png);
+    background-size: cover;
+}
